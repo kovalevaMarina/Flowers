@@ -1,0 +1,189 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #AE7C78;
+  background-color: #E5E5E5;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.menu__list {
+  margin: 0;
+  padding-left: 0;
+}
+
+.menu__item {
+  list-style-type: none;
+}
+
+.menu__link {
+  color: #AE7C78;
+  transition: .5s;
+}
+
+.menu__link:hover {
+  opacity: 0.5;
+}
+
+.menu__link:active {
+  opacity: 0.6;
+}
+
+.title {
+  font-family: "Playfair Display", Arial, serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  margin-bottom: 36px;
+}
+
+.promo__title {
+  font-family: "Playfair Display", Arial, serif;
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 59px;
+  color: #AE7C78;
+}
+
+.promo__title-sub {
+  font-style: italic;
+}
+
+.promo__description {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.button {
+  padding: 30px 70px;
+  color: #FFFFFF;
+  background-color: #D89999;
+  border: 1px solid transparent;
+  border-radius: 40px;
+  transition: .5s;
+}
+
+.button:hover {
+  background-color:#AE7C78;
+}
+
+.button:focus {
+  color: #AE7C78;
+  border: 1px solid #AE7C78;
+  background-color: #FFFFFF;
+}
+
+.advantages__title,
+.catalog__title {
+  font-weight: 500;
+}
+
+.popular__slider-title,
+.popular__slider-price {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.catalog__link {
+  color: #FFFFFF;
+}
+
+.catalog__title {
+  font-family: "Playfair Display", Arial, serif;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 48px;
+}
+
+.discount {
+  background-color: #AE7C78;
+}
+
+.discout__title {
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 59px;
+  color: #FFFFFF;
+  margin-bottom: 24px;
+}
+
+.discount__discription {
+  font-size: 24px;
+  line-height: 29px;
+  color: #FFFFFF;
+}
+
+.news__title {
+  margin-bottom: 40px;
+}
+
+.news__text {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.news__link svg path {
+  fill: #D89999;
+  transition: .3s;
+}
+
+.news__link svg path:hover {
+  fill: #AE7C78;
+}
+
+.reviews__author {
+  font-weight: 500;
+  font-style: normal;
+}
+
+.contacts__text {
+  font-weight: 500;
+}
+
+.contacts__link {
+  color: #AE7C78;
+  transition: .5s;
+}
+
+.contacts__link:hover {
+  color: #D89999;
+}
+
+.footer {
+  background-color: #AE7C78;
+}
+
+.footer__link {
+  color: #FFFFFF;
+  transition: .5s;
+}
+
+.footer__link:hover {
+  opacity: 0.5;
+}
+
+.social__link svg path {
+  fill: #FFFFFF;
+  transition: .5s;
+}
+
+.social__link svg path:hover {
+  opacity: 0.5;
+}
