@@ -7,13 +7,15 @@
   <title>Botanica</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css" type="text/css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.css">
   <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 <body>
   <header class="header">
     <div class="container">
-      <a href="" class="header__logo">
-        <img class="header__logo-img" src="images/logo.svg" alt="Логотип компании Botanica">
+      <a href="index.html" class="header__logo">
+        <img class="header__logo-img" src="images/logo.svg" alt="Логотип компании Botanica" width="100" height="33">
       </a>
       <nav class="menu">
         <ul class="menu__list">
@@ -46,43 +48,56 @@
         <h2 class="visually-hidden">Наши преймущества</h2>
         <ul class="advantages__list">
           <li class="advantages__item">
-            <h4 class="advantages__title">Быстрая доставка</h4>
-            <p class="advantages__text">Можем собрать букет и передать его в доставку всего за час.</p>
+            <img class="advantages__img" src="images/delivery_icon.svg" alt="Иконка грузовика" width="82" height="52">
+            <div class="advantages__block">
+              <h4 class="advantages__title">Быстрая доставка</h4>
+              <p class="advantages__text">Можем собрать букет и передать его в доставку всего за час.</p>
+            </div>
           </li>
           <li class="advantages__item">
-            <h4 class="advantages__title">Всегда свежие цветы</h4>
-            <p class="advantages__text">Тщательно следим за состоянием цветов, а опытные флористы отбирают для букетов каждый цветок.</p>
+            <img class="advantages__img" src="images/flowers_icon.svg" alt="Иконка букетов цветов" width="52" height="52">
+            <div class="advantages__block">
+              <h4 class="advantages__title">Всегда свежие цветы</h4>
+              <p class="advantages__text">Тщательно следим за состоянием цветов, а опытные флористы отбирают для букетов каждый цветок.</p>
+            </div>
           </li>
           <li class="advantages__item">
-            <h4 class="advantages__title">Отправляем фото цветов</h4>
-            <p class="advantages__text">Отправляем фото цветов.</p>
+            <img class="advantages__img" src="images/photo_icon.svg" alt="Иконка фотоапарата" width="58" height="52">
+            <div class="advantages__block">
+              <h4 class="advantages__title">Отправляем фото цветов</h4>
+              <p class="advantages__text">Перед доставкой сделаем фотографию букета и отправим вам.</p>
+            </div>
           </li>
         </ul>
       </div>
     </section>
     <section class="popular">
-      <div class="container">
+      <div class="container-small">
         <h2 class="popular__title title">Популярные букеты</h2>
         <div class="popular__slider">
           <div class="popular__slider-item">
-            <div class="popular__slider-description">
-              <h3 class="popular__slider-title">Букет «Нежность»</h3>
-              <p class="popular__slider-text">Элегантный букет, который станет отличным подарком на день рождения или юбилей.</p>
-              <p class="popular__slider-text">30 × 40 см</p>
-              <p class="popular__slider-price">3600 руб.</p>
-              <a href="" class="popular__slider-btn button">Заказать</a>
+            <div class="popular__slider-inner">
+              <div class="popular__slider-description">
+                <h3 class="popular__slider-title">Букет «Нежность»</h3>
+                <p class="popular__slider-text">Элегантный букет, который станет отличным подарком на день рождения или юбилей.</p>
+                <p class="popular__slider-size">30 × 40 см</p>
+                <p class="popular__slider-price">3600 руб.</p>
+                <a href="" class="popular__slider-btn button">Заказать</a>
+              </div>
+              <img class="popular__slider-img" src="images/bouquet_roses.png" alt="Изображение готового букета роз">
             </div>
-            <img class="popular__slider-img" src="images/bouquet_roses.png" alt="Изображение готового букета роз">
           </div>
           <div class="popular__slider-item">
-            <div class="popular__slider-description">
-              <h3 class="popular__slider-title">Букет «Чувства»</h3>
-              <p class="popular__slider-text">Элегантный букет, который станет отличным подарком на день рождения или юбилей.</p>
-              <p class="popular__slider-text">40 × 20 см</p>
-              <p class="popular__slider-price">3700 руб.</p>
-              <a href="" class="popular__slider-btn button">Заказать</a>
+            <div class="popular__slider-inner">
+              <div class="popular__slider-description">
+                <h3 class="popular__slider-title">Букет «Чувства»</h3>
+                <p class="popular__slider-text">Элегантный букет, который станет отличным подарком на день рождения или юбилей.</p>
+                <p class="popular__slider-size">40 × 20 см</p>
+                <p class="popular__slider-price">3700 руб.</p>
+                <a href="" class="popular__slider-btn button">Заказать</a>
+              </div>
+              <img class="popular__slider-img" src="images/bouquet_roses.png" alt="Изображение готового букета роз">
             </div>
-            <img class="popular__slider-img" src="images/bouquet_roses.png" alt="Изображение готового букета роз">
           </div>
         </div>
       </div>
@@ -175,9 +190,9 @@
             </ul>
           </div>
           <div class="news__grid">
-            <img class="news__grid-img" src="images/news-1.jpg" alt="Букет роз с евкалиптом">
-            <img class="news__grid-img" src="images/news-2.jpg" alt="Букет роз лежит на столе">
-            <img class="news__grid-img" src="images/news-3.jpg" alt="Букет роз держит флорист в руках">
+            <img class="news__grid-img" src="images/news_1.jpg" alt="Букет роз с евкалиптом">
+            <img class="news__grid-img" src="images/news_2.jpg" alt="Букет роз лежит на столе">
+            <img class="news__grid-img" src="images/news_3.jpg" alt="Букет роз держит флорист в руках">
           </div>
         </div>
       </div>
@@ -232,8 +247,8 @@
   </main>
   <footer class="footer">
     <div class="container">
-      <a href="" class="header__logo">
-        <img class="header__logo-img" src="images/logo.svg" alt="Логотип компании Botanica">
+      <a href="" class="footer__logo">
+        <img class="footer__logo-img" src="images/logo.svg" alt="Логотип компании Botanica">
       </a>
       <nav class="footer__menu">
         <ul class="footer__menu-list">
@@ -269,5 +284,9 @@
       </ul>
     </div>
   </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
