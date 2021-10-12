@@ -105,54 +105,56 @@
     <section class="catalog">
       <div class="container">
         <h2 class="visually-hidden">Разделы каталога</h2>
-        <div class="catalog__list">
-          <article class="catalog__item">
+        <ul class="catalog__list">
+          <li class="catalog__item catalog__item_01">
             <a class="catalog__link" href="#">
               <h3 class="catalog__title">Свадебные букеты</h3>
               <p class="catalog__text">Букеты для невест</p>
             </a>
-          </article>
-          <article class="catalog__item">
+          </li>
+          <li class="catalog__item catalog__item_02">
             <a class="catalog__link" href="#">
               <h3 class="catalog__title">Букеты с пионами</h3>
               <p class="catalog__text">Букеты с сезонными пионами</p>
             </a>
-          </article>
-          <article class="catalog__item">
+          </li>
+          <li class="catalog__item catalog__item_03">
             <a class="catalog__link" href="#">
               <h3 class="catalog__title">Выбрать букет</h3>
               <p class="catalog__text">Букеты в ассортименте</p>
             </a>
-          </article>
-        </div>
+          </li>
+        </ul>
       </div>
     </section>
     <section class="discount">
       <div class="container">
-        <div class="discount__content">
-          <h2 class="discout__title title">Скидка 10% на первый заказ</h2>
-          <p class="discount__discription">Если заказываете у нас букет впервые — при оформлении заказа введите промокод «Botanika2021» и получите скидку 10%.</p>
+        <div class="discount__content-inner">
+          <div class="discount__content">
+            <h2 class="discout__title title">Скидка 10% на&nbsp;первый заказ</h2>
+            <p class="discount__discription">Если заказываете у нас букет впервые — при оформлении заказа введите промокод «Botanika2021» и получите скидку 10%.</p>
+          </div>
+          <img class="discout__image" src="images/bouquet_discount.jpg" alt="Флорист собирает букет из роз">
         </div>
-        <img class="discout__image" src="images/bouquet_discount.jpg" alt="Флорист собирает букет из роз">
       </div>
     </section>
     <section class="steps">
       <div class="container">
         <h2 class="title">4 шага к идеальному букету</h2>
         <ul class="steps__list">
-          <li class="steps__item">
+          <li class="steps__item steps__item-order">
             <h4 class="steps__title">Заказ</h4>
             <p class="steps__text">Выберите понравившийся букет из каталога и оформите заказ</p>
           </li>
-          <li class="steps__item">
+          <li class="steps__item steps__item-details">
             <h4 class="steps__title">Уточнение деталей</h4>
             <p class="steps__text">Наш флорист позвонит вам после оформления заказа, чтобы уточнить детали</p>
           </li>
-          <li class="steps__item">
+          <li class="steps__item steps__item-payment">
             <h4 class="steps__title">Оплата</h4>
             <p class="steps__text">Оплатить заказ можно онлайн на сайте или при получении</p>
           </li>
-          <li class="steps__item">
+          <li class="steps__item steps__item-delivery">
             <h4 class="steps__title">Доставка</h4>
             <p class="steps__text">Курьер позвонит за час до прибытия и доставит заказ вовремя</p>
           </li>
@@ -164,7 +166,7 @@
         <div class="news__inner">
           <div class="news__content">
             <h2 class="news__title title">Следите за нашими новостями</h2>
-            <p class="news__text">Подписывайтесь на наши соцсети и узнавайте о новинках и акциях первым.</p>
+            <p class="news__text">Подписывайтесь на наши соцсети и узнавайте о&nbsp;новинках и акциях первым.</p>
             <ul class="news__list">
               <li class="news__item">
                 <a class="news__link" href="#">
@@ -200,23 +202,26 @@
     <section class="reviews">
       <div class="container">
         <h2 class="title">Отзывы</h2>
-        <div class="reviews__inner">
-          <blockquote>
-            <p class="reviews__text">Всё очень понравилось! Быстрое оформление заказа, выбор удобного времени доставки. Всем большое спасибо!</p>
+        <ul class="reviews__list">
+          <li class="reviews__item">
+            <blockquote class="reviews__blockquote">Всё очень понравилось! Быстрое оформление заказа, выбор удобного времени доставки. Всем большое спасибо!</blockquote>
             <cite class="reviews__author">Марина</cite>
-          </blockquote>
-          <blockquote>
-            <p class="reviews__text">Внимательные флористы, вежливые. Магазин находится прям рядом с метро. Букет очень понравился, буду ещё заказывать!</p>
+          </li>
+          <li class="reviews__item">
+            <blockquote class="reviews__blockquote">Внимательные флористы, вежливые. Магазин находится прям рядом с метро. Букет очень понравился, буду ещё заказывать!</blockquote>
             <cite class="reviews__author">Татьяна</cite>
-          </blockquote>
-          <blockquote>
-            <p class="reviews__text">Выбор букетов на любой вкус и цену. Бывают хорошие скидки, а флористы всегда помогут и точно соберут красивый букет!</p>
+          </li>
+          <li class="reviews__item">
+            <blockquote class="reviews__blockquote">Выбор букетов на любой вкус и цену. Бывают хорошие скидки, а флористы всегда помогут и точно соберут красивый букет!</blockquote>
             <cite class="reviews__author">Ольга</cite>
-          </blockquote>
-        </div>
+          </li>
+        </ul>
       </div>
     </section>
     <section class="contacts">
+      <div class="contacts__map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sua!4v1629999100382!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
       <div class="container">
         <div class="contacts__box">
           <h2 class="title">Мы ждем вас</h2>
@@ -239,16 +244,13 @@
             </li>
           </ul>
         </div>
-        <div class="contacts__map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sua!4v1629999100382!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
       </div>
     </section>
   </main>
   <footer class="footer">
     <div class="container">
       <a href="" class="footer__logo">
-        <img class="footer__logo-img" src="images/logo.svg" alt="Логотип компании Botanica">
+        <img class="footer__logo-img" src="images/logo_reverse.svg" alt="Логотип компании Botanica">
       </a>
       <nav class="footer__menu">
         <ul class="footer__menu-list">
